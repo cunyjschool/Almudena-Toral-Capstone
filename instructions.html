@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Instructions</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Thad Allender">
+	<link rel="stylesheet" href="../modularity/styles/screen.css" type="text/css" media="screen, projection" />
+	
+	<!-- Date: 2009-05-30 -->
+</head>
+<body style="margin:2em 0">
+	<div class="container">
+ 		<h1>Instructions</h1>
+		<hr />
+		<div class="span-15 colborder">
+			<p>High Def is a child theme for Modularity, a multimedia theme framework for Wordpress.  You must have Modularity installed for this theme to work.  The theme design was developed with users who appreciate visual browsing and prefer a minimal layout, with their photos and multimedia featured front and center.  But, the theme can been used to create everything from e-commerce sites, music review sites, portfolio sites, and everything in between.  Homepage designs can be turned on and off at the click of a button on the Theme Options panel.  <a href="http://feeds.feedburner.com/GraphPaperPress">Subscribe to Graph Paper Press' feed</a> or follow us on the bleeding edge of development by <a href="http://twitter.com/GraphPaperPress">following us on Twitter</a>.</p>
+
+		  <p>Here is a brief list of the major features:</p>
+		<ul>
+			<li>Theme options panel to configure homepage design, easy logo insertion, css style over-ride, insert ads and more</li>
+			<li>Automatic thumbnail generator with the ability to override the automated thumbnails</li>
+			<li>Built-in HD video player for self-hosting HD quality video, multiple videos in a post</li>
+			<li>Ability to embed any kind of Flash media via custom fields.</li>
+			<li>Three footer widgets</li>
+			<li>Multi-tier drop-down navigation to maximize homepage space</li>
+			<li>Built atop CSS frameworks to speed customization</li>
+			<li>Forward and backward compatibility with previous versions of Wordpress</li>
+			<li>XHTML:  This theme has been tested on Firefox, Safari, IE 8, 7, 6.</li>
+		</ul>
+		</div>
+		<div class="span-8 last">
+			<div class="box">
+			<h3>Best Practices</h3>
+				<p>If you want to make changes to how this theme looks and feels, than create a child theme.  Never make changes to the original theme files.  Why?  Because when a new version of this theme is released, all of your changes will be lost when you update.  Plus, making a child theme is incredibly easy.  <a href="http://graphpaperpress.com/2010/02/10/how-to-create-child-themes-for-our-modularity-theme-for-wordpress/">Here is how you do it.</a></p>
+			</div>
+		</div>
+		<hr />
+		<ol>
+		<li class="box">
+			<h3>Installation</h3>
+					<ol>
+						<li>Unzip the folder contained in the archive to your computer</li>
+						<li>Upload the folder and its contents to the themes directory of your blog, located in &quot;wp-content/themes&quot; where WordPress is installed.</li>
+						<li>Click on Appearance - Themes menu from the WP admin panel, then select the theme to activate.</li>
+					  <li>Click on View Site at the top of the page.  Bam.  Hot site!</li>
+					</ol>
+		</li>
+		<li class="box">
+			<h3>Initial setup</h3>
+			<p>High Def is a 950px wide, one or two column theme, depending on options you have chosen.  We need to set up your default image and thumbnail sizes to allow for easy posting and consistent design structure.  Click <strong>Settings - Media</strong>.</p>
+			<ul>
+			<li>Set your thumbnail size to <strong>150px wide by 150px tall.</strong></li>
+			<li>Set your medium size images to <strong>590px wide.  Do not set a height.</strong></li>
+			<li>Set your large size images to <strong>950px wide.  Do not set a height.</strong></li>
+			</ul>
+			<br />
+			<p>Post thumbnails are generated automatically by the functions contained in this theme.  This theme uses the new Post Thumbnail feature available in WordPress 2.9.  Read more about this new feature <a href="http://graphpaperpress.com/2009/12/30/wordpress-2-9-video-tour/" title="WordPress 2.9's post image feature">here</a>.  If you need additional instructions on uploading photos, inserting photo galleries and using the Wordpress interface, please view this <a href="http://wordpress.org/development/2008/03/wordpress-25-rc2/">screencast</a> or watch our <a href="http://graphpaperpress.com/members/member.php">video tutorials</a>, if you are a <a href="http://graphpaperpress.com/members/signup.php">member of our site</a>.</p>
+		</li>
+		<li class="box">
+			<h3>Theme Options</h3>
+			<p>This theme has seven optional homepage designs:</p>
+				<ol>
+					<li>Slideshow Section - A full page slideshow</li>
+					<li>HD Video Section - A full page video presentation</li>
+					<li>Featured Sliding Posts - A horizontal slider that reveals six featured posts</li>
+					<li>Thumbnail Slider - A horizontal list of thumbnails representing recent posts</li>
+					<li>Featured Section - A main post at left, with three earlier posts at right</li>
+					<li>Blog Section- A normal tubular list of posts</li>
+					<li>Categories Section - A five column grid of selected categories</li>
+				</ol>
+				<br/>
+			<p>Please activate each option and view your new homepage design.  Remember, less is more.</p>
+		</li>
+		<li class="box">
+			<h3>Navigation</h3>
+			<p>The navigation contains a listing of all your pages and posts, your contact info and the search bar. You can set or remove the contact info from the Theme Options panel.  <a href="http://codex.wordpress.org/Template_Tags/wp_list_pages"> For further reading, please see these instructions.</a></p>
+		</li>
+		<li class="box">
+			<h3>Video</h3>
+			<p>High Def has a built-in HD video player that plays FLV video files.  You are no longer restricted to pixelated YouTube videos.  To add a video, upload the FLV file to your server using your favorite method, like FTP.  Copy and paste the link to the file into a custom field called <strong>video</strong>.  Next, add a video thumbnail.  You can do this the exact way that you add regular thumbnails, except, you will want to add an image large enough to fit the maximum size of the video player, for best results try an image that is 950px wide.  Add the video thumbnail to a custom field with key value <strong>video-thumb</strong>.  For <strong>multiple videos</strong> within a post or page, try different values for the same <strong>video</strong> key which mean you can have 2 or more instances of <strong>video</strong> key. Same goes for <strong>video-thumb</strong>. Note that each thumbnail should be in the same precedence as that of video for them to match. You can also add other multimedia, which can include virtually any media with embed capabilities.  Enter "multimedia" as the key value and paste your YouTube, Vimeo, or any other html embed code into the value field.  You can read more about using custom fields <a href="http://justintadlock.com/archives/2007/10/24/using-wordpress-custom-fields-introduction">here.</a></p>
+		</li>
+		<li class="box">
+			<h3>Post Thumbnails</h3>
+			<p>By default, thumbnails are auto cropped by Wordpress.  In WordPress 2.9, you can now change the crops of your images after uploading them into WordPress.  This is the order in which the theme attempts to grab an image to use as a post thumbnail:</p>
+
+<ol>
+	<li>Looks for an image by custom field called "thumbnail".</li>
+	<li>If no image is added by custom field, it checks for a <a href="http://graphpaperpress.com/2009/12/30/wordpress-2-9-video-tour/" title="WordPress 2.9's post image feature">post image</a> (WordPresss 2.9+ feature).</li>
+	<li>If no image is found, it grabs the latest image attached to your post using the Add Media icon.</li>
+	<li>If no image is attached, it can extract an image from your post content.</li>
+	<li>If no image is found at this point, it will defer to a default image.</li>
+</ol>
+<br />
+<p>If your thumbnails or images look squished, then you need to follow these steps:</p>
+<ol>
+	<li>Make sure you have your Thumbnail, Medium, and Large image sizes set to the correct dimension on WordPress' Settings -> Media Settings page.</li>
+	<li>If you have switched themes or uploaded images with incorrect dimensions, you will likely need to "regenerate" your thumbnails to the new dimensions.  To do this, you need the <a href="http://wordpress.org/extend/plugins/regenerate-thumbnails/">Regenerate Thumbnails plugin</a>.</li>
+</ol>
+
+		</li>
+		<li class="box">
+			<h3>Widgets</h3>
+					<p>There are a total of three widgetized areas on this theme, depending on which options you activate on the Theme Options panel.  Three widgetized areas appear on the bottom and there is one sidebar widget. You can add and delete widgets by clicking Design - Widgets, from within your Wordpress admin panel.</p>
+		</li>
+		<li class="box">
+			<h3>Advertising</h3>
+			<p>This theme has two built-in spots for advertising:  One in the sidebar, which measures 310 pixels wide, and one underneath the main post, which measures 590 pixels wide.  You can add your adversing code on the Theme Options panel.</p>
+		</li>
+		<li class="box">
+			<h3>New WordPress 2.9 Features</h3>
+			<p><embed src="http://v.wordpress.com/wp-content/plugins/video/flvplayer.swf?ver=1.11" type="application/x-shockwave-flash" width="640" height="360" allowscriptaccess="always" allowfullscreen="true" flashvars="guid=NBZ853Xn&amp;width=640&amp;height=360" title="Introducing WordPress 2.9 Carmen"></embed></p>
+		</li>
+		<li class="box">
+			<h3>Common problems</h3>
+			<p>This theme uses jQuery javascript to do lots of fancy stuff.  If your theme looks broken, than you likely have a plugin that uses a conflicting javascript library.  Deactivate your plugins, one-by-one, to determine which plugin is conflicting with jQuery.</p>
+			<p>Still having trouble?  Consider <a href="http://graphpaperpress.com/members/signup.php">becoming a member of Graph Paper Press</a> so you can get access to our private, well-groomed <a href="http://graphpaperpress.com/support/">support forum</a>, tutorials, and additional themes.</p>
+		</li>
+		<li class="box">
+			<h3>Recommended plugins</h3>
+			<ul>
+				<li><a href="http://wordpress.org/extend/plugins/fancybox-for-wordpress/">Fancybox</a>: The best lightbox plugin available, currently seen on Apple.com.</li>
+				<li><a href="http://wordpress.org/extend/plugins/wp-super-cache/">WP Super Cache:</a> This plugin generates static html files from your dynamic WordPress blog.  After a html file is generated your webserver will serve that file instead of processing the comparatively heavier and more expensive WordPress PHP scripts.</li>
+			</ul>
+		</li>
+		<li class="box">
+			<h3>Credits</h3>
+			<ul>
+			<li><a href="http://thadallender.com">Thad Allender</a> is the principal designer/developer.</li>
+			<li><a href="http://nhuja.com">Chandra Maharzan</a> is the genius debugger/developer.</li>
+			</ul>
+		</li>
+	</ol>	
+	</div>
+</body>
+</html>
