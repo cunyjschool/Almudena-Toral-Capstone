@@ -133,6 +133,11 @@ display:none;
   float:left;
   margin-right:25px;
 }
-.share-yours .content p a:hover{
-  text-decoration:underline;
+.iframe_adjust{
+  position:relative;
+  left:-175px;
+}
+span.read_more{
+  position:relative;
+  top:-15px;
 }

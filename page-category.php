@@ -9,14 +9,16 @@ Template Name: Category Page
 <div class="share-yours">
 	<h2><?php the_title(); ?></h2>
 	<div class="content">
-		<h3>Read More</h3>
+		<h3>Readers' Stories</h3>
 		<?php if( $post_category = get_post_meta($post->ID, 'post_category', true) ) { $post_category; } 
 		$temp = $wp_query;
 		$wp_query = NULL;
 		$wp_query = new WP_Query();
 		$wp_query->query('category_name='.$post_category.'&paged='.$paged); $tb_counter = 1;
 		while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-		<p><a href="<?php the_permalink(); ?>" ><?php global $more; $more = 0; the_excerpt(); ?></a></p>
+		<p>
+			<a href="<?php the_permalink(); ?>" ><?php global $more; $more = 0; the_excerpt(); ?><span class="read_more">Read the whole story</span></a>
+		</p>
 		<?php $tb_counter++; endwhile; $wp_query = NULL; $wp_query = $temp;?>
 	</div>
 	<div class="share-yours-content">

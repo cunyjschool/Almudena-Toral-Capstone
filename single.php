@@ -5,7 +5,7 @@
 <div <?php if(function_exists('post_class')) : ?><?php post_class(); ?><?php else : ?>class="post post-<?php the_ID(); ?>"<?php endif; ?>>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-	<h2><?php the_title(); ?></h2>
+	<?php if( $slideshow_url = get_post_meta($post->ID, 'slideshow_url', true) ) { ?><div class="iframe_adjust"><iframe src="<?php echo $slideshow_url; ?>" width="950" height="575" style="float:left;" scrolling="no"></iframe></div><?php } else { ?><h2><?php the_title(); ?></h2><?php } ?>
 	<?php if ( !post_password_required() ) { ?>
 		<?php include (TEMPLATEPATH . '/apps/multimedia.php'); ?>
 		<?php include (TEMPLATEPATH . '/apps/video.php'); ?>
