@@ -125,11 +125,14 @@ display:none;
 }
 
 .share-yours .content{
-  width:500px;
-  float:left;
+  width:300px;
+  float:right;
 }
 .share-yours .share-yours-content{
-  width:425px;
+  width:625px;
   float:left;
-  padding-left:25px;
+  margin-right:25px;
+}
+.share-yours .content p a:hover{
+  text-decoration:underline;
 }
