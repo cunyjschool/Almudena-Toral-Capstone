@@ -1,12 +1,12 @@
 /*
-Theme Name: Nowhere is Home
+Theme Name: Nowhere is Home - Almudena Toral
 Theme URI: http://nowhereishome.com/
 Description: Highdef Child theme for Almudena Toral's Interactive Capstone project
-Template: modularity
-Version: 0.1.0
+Template: graphpaperpress/modularity
+Version: 0.1.1
 */
 	
-@import url("../modularity/style.css");
+@import url("../graphpaperpress/modularity/style.css");
 
 body {background:#fff; border-top:30px solid #222}
 .container-inner {padding:1.5em 0}
